@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# But not these files...
+!.files/
+!.files/**
+!.gitconfig
+!.gitignore
+!.gitmodules
+!.tmux.conf
+!.zshrc
+!example.env.z.sh
+!install.sh
+!README.md
