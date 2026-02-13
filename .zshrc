@@ -1,3 +1,5 @@
+export SHELL=/bin/zsh
+
 HISTFILESIZE=100000
 HISTSIZE=10000
 
