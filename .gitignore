@@ -6,7 +6,6 @@
 !.files/**
 !.gitconfig
 !.gitignore
-!.gitmodules
 !.tmux.conf
 !.bashrc
 !.zshrc
