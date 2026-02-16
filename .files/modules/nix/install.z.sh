@@ -1,3 +1,5 @@
 # =========================================================================== [Installation] ===== #
 
-echo "[Nix] Installed Via: https://github.com/boseriko/nix"
+if [[ "$OS_TYPE" == "stm" ]]; then
+  echo "[Nix] Installed Via: https://github.com/boseriko/nix"
+fi
