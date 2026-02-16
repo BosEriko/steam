@@ -12,3 +12,9 @@ Before running the installation script you first need to setup a few things. Run
 ```sh
 cp ~/example.env.z.sh ~/env.z.sh && nano ~/env.z.sh
 ```
+
+## Installation
+After setting up the variables you can now restart your terminal to start installing.
+```sh
+source ~/.zshrc
+```
