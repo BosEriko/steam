@@ -7,6 +7,29 @@ export SHELL=/bin/zsh
 HISTFILESIZE=100000
 HISTSIZE=10000
 
+# =========================================================================== [Os Detection] ===== #
+detect_os() {
+  # macOS
+  if [[ "$(uname -s)" == "Darwin" ]]; then
+    echo "mac"
+    return
+  fi
+
+  # WSL (Ubuntu on Windows)
+  if grep -qi microsoft /proc/version 2>/dev/null; then
+    echo "win"
+    return
+  fi
+
+  # SteamOS
+  if [[ -f /etc/os-release ]] && grep -qi steamos /etc/os-release; then
+    echo "stm"
+    return
+  fi
+
+  echo "unknown"
+}
+
 # ========================================================= [Automate Install/Configuration] ===== #
 INSTALL_STATE="$HOME/.install-state"
 [[ -d "$INSTALL_STATE" ]] || mkdir -p "$INSTALL_STATE"
