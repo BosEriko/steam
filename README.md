@@ -6,3 +6,9 @@ To start you must first sync the home directory. Run the command below to do so.
 ```sh
 curl -fsSL https://raw.githubusercontent.com/BosEriko/steam/HEAD/install.sh | sh
 ```
+
+## Setup Environment Variables
+Before running the installation script you first need to setup a few things. Run the command below to setup your environment variables.
+```sh
+cp ~/example.env.z.sh ~/env.z.sh && nano ~/env.z.sh
+```
