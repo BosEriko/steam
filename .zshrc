@@ -54,7 +54,10 @@ setup() {
 
 # =============================================================== [Source Modules/Languages] ===== #
 for folder in modules languages; do
-  for dir in ~/.files/$folder/*(/); do
+  base=~/.files/$folder
+  [[ -d $base ]] || continue
+
+  for dir in $base/*(/); do
     setup "$dir"
   done
 done
