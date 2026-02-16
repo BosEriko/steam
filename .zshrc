@@ -8,15 +8,6 @@ if [[ -n "$IN_NIX_SHELL" ]]; then
   export PS1="$PS1(nix-shell) "
 fi
 
-# Oh My ZSH
-# Install Script:
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
 # =========================================================== [Source Environment Variables] ===== #
 [[ ! -f ~/env.z.sh ]] && return 0
 source ~/env.z.sh
