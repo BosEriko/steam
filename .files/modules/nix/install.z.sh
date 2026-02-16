@@ -1,3 +1,3 @@
 # =========================================================================== [Installation] ===== #
 
-echo "Installed Via: https://github.com/boseriko/nix"
+echo "[Nix] Installed Via: https://github.com/boseriko/nix"
