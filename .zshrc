@@ -29,6 +29,7 @@ detect_os() {
 
   echo "unknown"
 }
+export OS_TYPE="$(detect_os)"
 
 # ========================================================= [Automate Install/Configuration] ===== #
 INSTALL_STATE="$HOME/.install-state"
